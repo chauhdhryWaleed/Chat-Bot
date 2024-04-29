@@ -1,23 +1,23 @@
 {"intents": [
-    {"tag": "greeting",
-     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there"],
-     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
-    },
-    {"tag": "morning",
+     {"tag": "morning",
         "patterns": ["Good morning", "Morning"],
         "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
     },
-    {"tag": "afternoon",
+     {"tag": "afternoon",
         "patterns": ["Good afternoon", "Afternoon"],
         "responses": ["Good afternoon. How is your day going?"]
     },
-    {"tag": "evening",
+   {"tag": "evening",
         "patterns": ["Good evening","Evening"],
         "responses": ["Good evening. How has your day been?"]
     },
     {"tag": "night",
         "patterns": ["Good night","Night"],
         "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
     },
     {"tag": "goodbye",
      "patterns": ["Bye", "See you later", "Goodbye",  "ok bye", "Bye then"],
@@ -69,15 +69,15 @@
     },
     {"tag": "happy",
         "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok"],
-        "responses": ["That's geat to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
+        "responses": ["That's great to hear.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
     },
     {"tag": "casual",
-        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "yeah", "yes", "no", "not really"],
         "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
     },
     {"tag": "anxious",
         "patterns": ["I feel so anxious.", "I'm so anxious because of ","I've been feeling very anxious lately."],
-        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?","I'm sorry to hear that you've been feeling anxious. It's important to take care of your mental health", "I understand that it can be scary. Tell me more about it.", "Don',t let the little worries bring you down. What's the worse that can happen?"]
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?","I'm sorry to hear that you've been feeling anxious. It's important to take care of your mental health", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down"]
     },
     {"tag": "not-talking",
         "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
