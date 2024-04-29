@@ -29,15 +29,18 @@ def bag_of_words(sentence):
         for i,word in enumerate(words):
             if word==w :
                 bag[i]=1
+                break
     return np.array(bag)
 
 def predict_class(sentence):
     bow=bag_of_words(sentence)
     res=model.predict(np.array([bow]))[0]
-    error_threshold= 0.33
+    error_threshold= 0.55
 
     results =[[i,r] for i,r in enumerate(res) if r>error_threshold]
-    results.sort(key=lambda  x : x[1],reverse=True)
+    if results:
+        results.sort(key=lambda x: x[1], reverse=True)
+
     return_list=[]
 
     for r in results:
@@ -47,6 +50,8 @@ def predict_class(sentence):
 
 
 def get_response(intents_list, intents_json):
+    if not intents_list:  # Check if intents_list is empty
+        return "I'm sorry, I didn't understand that."
 
     tag=intents_list[0]['intent']
     list_of_intents=intents_json['intents']
