@@ -16,11 +16,16 @@
         "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
     },
     {"tag": "greeting",
-     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there"],
+     "patterns": ["Hi", "Hey","Hi there", "Hello", "Hey there"],
      "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
     },
+    {"tag": "Salam",
+     "patterns": ["Assalamu Alaikum", "Salam"],
+     "responses": ["Walikum Asalam Habibi. How are you feeling today"]
+    },
+
     {"tag": "goodbye",
-     "patterns": ["Bye", "See you later", "Goodbye",  "ok bye", "Bye then"],
+     "patterns": ["Bye", "See you later", "Goodbye",  "ok bye"],
      "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
     },
     {"tag": "thanks",
@@ -33,7 +38,7 @@
     },
     {"tag": "about",
      "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself" ],
-     "responses": ["I'm Pandora, your Personal Therapeutic AI Assistant. How are you feeling today", "I'm Pandora, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.", "I'm Pandora. I am a conversational agent designed to mimic a therapist. So how are you feeling today?", "You can call me Pandora.", "I'm Pandora!", "Call me Pandora"]
+     "responses": ["I'm Genie, your Personal Therapeutic AI Assistant. How are you feeling today", "I'm Genie, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.", "I'm Pandora. I am a conversational agent designed to mimic a therapist. So how are you feeling today?", "You can call me Pandora.", "I'm Pandora!", "Call me Pandora"]
     },
     {"tag": "skill",
         "patterns": ["What can you do?"," What is your purpose"],
@@ -41,7 +46,7 @@
     },
     {"tag": "creation",
         "patterns": ["Who created you?", "How were you made?", "How were you created?"],
-        "responses": ["I was created by >.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+        "responses": ["I was created by FASTIANS", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
     },
     {"tag": "name",
         "patterns": ["My name is ", "I am name.", "I go by "],
@@ -192,6 +197,655 @@
         "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
         "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."]
     }
+  ,
+   {
+      "tag": "lonely",
+      "patterns": [
+        "I feel lonely",
+        "I'm feeling alone",
+        "I feel so isolated",
+        "I'm all by myself"
+      ],
+      "responses": [
+        "Feeling lonely is tough. Is there something specific on your mind?",
+        "I'm here for you. Tell me more about why you're feeling this way."
+      ]
+    },
+    {
+      "tag": "heartbreak",
+      "patterns": [
+        "I'm going through a breakup",
+        "My heart is broken",
+        "I feel so devastated",
+        "I just got dumped"
+      ],
+      "responses": [
+        "Breakups are hard. Take your time to heal. Do you want to talk about what happened?",
+        "I'm here to support you through this difficult time. Feel free to share your feelings."
+      ]
+    },
+    {
+      "tag": "stress-relief",
+      "patterns": [
+        "How can I relieve stress?",
+        "What are some stress-relief techniques?",
+        "I need to relax",
+        "Help me calm down"
+      ],
+      "responses": [
+        "There are many ways to relieve stress, such as deep breathing, meditation, or listening to calming music. Which one would you like to try?",
+        "Try taking a few deep breaths. Inhale for 4 seconds, hold for 7 seconds, and exhale for 8 seconds. Repeat this a few times and see if it helps."
+      ]
+    },
+    {
+      "tag": "self-care",
+      "patterns": [
+        "How can I practice self-care?",
+        "I need to take care of myself",
+        "What are some self-care tips?"
+      ],
+      "responses": [
+        "Self-care is important for your well-being. Try doing something you enjoy, getting enough rest, and nurturing your body and mind. What's something you like to do for self-care?",
+        "Self-care can be as simple as taking a walk, reading a book, or spending time with loved ones. What's one thing you can do today to take care of yourself?"
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I need motivation",
+        "I'm feeling demotivated",
+        "Help me stay motivated",
+        "I'm struggling to stay focused"
+      ],
+      "responses": [
+        "Remember why you started. Break your goals into smaller, manageable tasks and celebrate your progress along the way. You've got this!",
+        "Visualize your success and take one step at a time. Progress, no matter how small, is still progress."
+      ]
+    },
+    {
+      "tag": "positive-affirmations",
+      "patterns": [
+        "Can you give me some positive affirmations?",
+        "I need some encouragement",
+        "Tell me something uplifting"
+      ],
+      "responses": [
+        "You are capable of achieving great things.",
+        "You are worthy of love and happiness.",
+        "You have the strength to overcome any challenge."
+      ]
+    },
+    {
+      "tag": "gratitude",
+      "patterns": [
+        "How can I practice gratitude?",
+        "I want to be more grateful",
+        "What are the benefits of gratitude?"
+      ],
+      "responses": [
+        "Try keeping a gratitude journal where you write down things you're thankful for each day. Reflecting on the good in your life can help shift your perspective.",
+        "Start each day by thinking of three things you're grateful for. It can be as simple as the sun shining or a kind gesture from a friend."
+      ]
+    },
+    {
+      "tag": "positive-visualization",
+      "patterns": [
+        "How can I use positive visualization?",
+        "I want to visualize my success",
+        "Tell me about positive visualization"
+      ],
+      "responses": [
+        "Close your eyes and imagine yourself achieving your goals. Picture every detail and feel the emotions as if it's already happening. This can help boost your confidence and motivation.",
+        "Visualize yourself overcoming obstacles and reaching your dreams. Believe in yourself and your ability to succeed."
+      ]
+    }
+    ,
+    {
+  "tag": "hobbies",
+  "patterns": [
+    "What are some hobbies I can try?",
+    "I need a new hobby",
+    "Tell me about hobbies"
+  ],
+  "responses": [
+    "There are plenty of hobbies to explore, such as painting, gardening, photography, cooking, hiking, and playing a musical instrument. What interests you?"
+  ]
+},
+{
+  "tag": "music",
+  "patterns": [
+    "Recommend me some music",
+    "I need new music to listen to",
+    "Tell me about your favorite music"
+  ],
+  "responses": [
+    "Sure! What genre or mood are you in the mood for?"
+  ]
+},
+{
+  "tag": "books",
+  "patterns": [
+    "Recommend me a book",
+    "I want to read something new",
+    "Tell me about your favorite book"
+  ],
+  "responses": [
+    "Of course! What genre are you interested in?"
+  ]
+},
+{
+  "tag": "movies",
+  "patterns": [
+    "Recommend me a movie",
+    "I want to watch something new",
+    "Tell me about your favorite movie"
+  ],
+  "responses": [
+    "Sure thing! What kind of movie are you in the mood for?"
+  ]
+}
+,
+  {
+  "tag": "recipes",
+  "patterns": [
+    "Give me a recipe",
+    "I need a new recipe to try",
+    "Tell me about your favorite recipe"
+  ],
+  "responses": [
+    "Sure! What type of cuisine are you interested in?"
+  ]
+},
+{
+  "tag": "exercise",
+  "patterns": [
+    "Recommend me some exercises",
+    "I need a new workout routine",
+    "Tell me about your favorite exercise"
+  ],
+  "responses": [
+    "Exercise is important for physical and mental health. What type of exercise are you looking for?"
+  ]
+},
+{
+  "tag": "pets",
+  "patterns": [
+    "Tell me about pets",
+    "I want to learn about different pets",
+    "Do you have any pets?"
+  ],
+  "responses": [
+    "Pets can bring joy and companionship into our lives. What specific information are you interested in?"
+  ]
+},
+{
+  "tag": "travel",
+  "patterns": [
+    "Recommend me a travel destination",
+    "I want to plan a trip",
+    "Tell me about your favorite travel experience"
+  ],
+  "responses": [
+    "Traveling can be a wonderful experience. What type of destination are you interested in?"
+  ]
+},
+{
+  "tag": "languages",
+  "patterns": [
+    "I want to learn a new language",
+    "Recommend me a language learning resource",
+    "Tell me about your language skills"
+  ],
+  "responses": [
+    "Learning a new language can be rewarding. Which language are you interested in?"
+  ]
+},
+{
+  "tag": "finance",
+  "patterns": [
+    "I need financial advice",
+    "Recommend me some budgeting tips",
+    "Tell me about your financial goals"
+  ],
+  "responses": [
+    "Managing finances is important for stability. What specific financial aspect are you concerned about?"
+  ]
+},
+{
+  "tag": "cooking-tips",
+  "patterns": [
+    "Give me some cooking tips",
+    "I want to improve my cooking skills",
+    "Tell me about your cooking experience"
+  ],
+  "responses": [
+    "Cooking can be fun and rewarding. What type of cuisine are you interested in improving?"
+  ]
+},
+{
+  "tag": "gardening",
+  "patterns": [
+    "I want to start gardening",
+    "Give me some gardening tips",
+    "Tell me about your gardening experience"
+  ],
+  "responses": [
+    "Gardening can be therapeutic and rewarding. What type of plants are you interested in growing?"
+  ]
+},
+{
+  "tag": "creativity",
+  "patterns": [
+    "I need inspiration for my creative project",
+    "Tell me about your creative hobbies",
+    "How can I boost my creativity?"
+  ],
+  "responses": [
+    "Creativity is essential for self-expression. What type of creative project are you working on?"
+  ]
+},
+{
+  "tag": "motivational-quotes",
+  "patterns": [
+    "Give me a motivational quote",
+    "I need some inspiration",
+    "Tell me something motivational"
+  ],
+  "responses": [
+    "Motivational quotes can provide encouragement. What aspect of your life do you need motivation for?"
+  ]
+},
+{
+  "tag": "productivity",
+  "patterns": [
+    "I want to improve my productivity",
+    "Give me some productivity tips",
+    "How can I stay focused?"
+  ],
+  "responses": [
+    "Improving productivity can lead to greater efficiency. What specific tasks do you want to be more productive in?"
+  ]
+},
+{
+  "tag": "time-management",
+  "patterns": [
+    "I need help with time management",
+    "Give me some time management tips",
+    "How can I better manage my time?"
+  ],
+  "responses": [
+    "Effective time management is key for success. What are your biggest time management challenges?"
+  ]
+},
+{
+  "tag": "positive-thinking",
+  "patterns": [
+    "I want to be more positive",
+    "Give me tips for positive thinking",
+    "How can I cultivate a positive mindset?"
+  ],
+  "responses": [
+    "Positive thinking can improve overall well-being. What negative thoughts do you struggle with?"
+  ]
+},
+{
+  "tag": "insomnia",
+  "patterns": [
+    "I'm having trouble sleeping",
+    "Give me tips for better sleep",
+    "How can I overcome insomnia?"
+  ],
+  "responses": [
+    "Insomnia can negatively impact health. What strategies have you tried to improve your sleep?"
+  ]
+},
+{
+  "tag": "self-esteem",
+  "patterns": [
+    "I want to boost my self-esteem",
+    "Give me tips for building confidence",
+    "How can I improve my self-image?"
+  ],
+  "responses": [
+    "Building self-esteem is important for mental health. What aspects of yourself do you want to feel more confident about?"
+  ]
+},
+{
+  "tag": "yoga",
+  "patterns": [
+    "Tell me about yoga",
+    "I want to start practicing yoga",
+    "Give me some yoga tips"
+  ],
+  "responses": [
+    "Yoga can improve both physical and mental well-being. What specific aspect of yoga are you interested in learning about?"
+  ]
+},
+{
+  "tag": "positivity",
+  "patterns": [
+    "How can I maintain a positive outlook?",
+    "Give me tips for staying positive",
+    "How do you stay optimistic?"
+  ],
+  "responses": [
+    "Maintaining a positive outlook can improve resilience. What challenges are you currently facing?"
+  ]
+},
+{
+  "tag": "mindfulness",
+  "patterns": [
+    "Tell me about mindfulness",
+    "I want to practice mindfulness",
+    "Give me some mindfulness tips"
+  ],
+  "responses": [
+    "Mindfulness can reduce stress and improve focus. What specific mindfulness exercises are you interested in?"
+  ]
+},
+{
+  "tag": "laughter",
+  "patterns": [
+    "How can I bring more laughter into my life?",
+    "Tell me a joke to cheer me up",
+    "How do you stay lighthearted?"
+  ],
+  "responses": [
+    "Laughter is good for the soul. What kind of humor do you enjoy?"
+  ]
+},
+{
+  "tag": "happiness",
+  "patterns": [
+    "I want to be happier",
+    "Give me tips for increasing happiness",
+    "How can I find joy in life?"
+  ],
+  "responses": [
+    "Finding happiness is a journey. What activities or experiences bring you joy?"
+  ]
+}
+,
+  {
+  "tag": "therapy",
+  "patterns": [
+    "Tell me about therapy",
+    "I'm considering therapy",
+    "How does therapy work?"
+  ],
+  "responses": [
+    "Therapy can provide support and guidance for various mental health concerns. What specific questions do you have about therapy?"
+  ]
+},
+{
+  "tag": "coping-strategies",
+  "patterns": [
+    "I need coping strategies",
+    "How can I cope with stress?",
+    "What are some healthy coping mechanisms?"
+  ],
+  "responses": [
+    "Coping strategies can help manage stress and emotions. What situations or emotions do you need coping strategies for?"
+  ]
+},
+{
+  "tag": "support-system",
+  "patterns": [
+    "How can I build a support system?",
+    "I need support from others",
+    "Tell me about the importance of a support network"
+  ],
+  "responses": [
+    "A support system can provide emotional and practical assistance. Who are the people in your life you can rely on for support?"
+  ]
+},
+{
+  "tag": "self-care-routine",
+  "patterns": [
+    "I want to create a self-care routine",
+    "How do I establish self-care habits?",
+    "Tell me about the benefits of self-care"
+  ],
+  "responses": [
+    "Self-care is important for overall well-being. What activities do you enjoy that could be incorporated into your self-care routine?"
+  ]
+},
+{
+  "tag": "stress-management",
+  "patterns": [
+    "How can I better manage stress?",
+    "Give me tips for stress management",
+    "What are some stress-relief techniques?"
+  ],
+  "responses": [
+    "Stress management techniques can help reduce the impact of stress on mental health. What specific stressors do you struggle with?"
+  ]
+},
+{
+  "tag": "setting-boundaries",
+  "patterns": [
+    "I need help setting boundaries",
+    "How do I establish healthy boundaries?",
+    "Tell me about the importance of setting boundaries"
+  ],
+  "responses": [
+    "Setting boundaries is essential for self-care and maintaining healthy relationships. What boundaries do you feel you need to establish?"
+  ]
+},
+{
+  "tag": "journaling",
+  "patterns": [
+    "Tell me about journaling",
+    "I want to start journaling",
+    "How can journaling improve mental health?"
+  ],
+  "responses": [
+    "Journaling can be a therapeutic practice. What emotions or thoughts do you want to explore through journaling?"
+  ]
+},
+{
+  "tag": "mindfulness-practice",
+  "patterns": [
+    "How do I start a mindfulness practice?",
+    "Tell me about mindfulness meditation",
+    "How can mindfulness benefit mental health?"
+  ],
+  "responses": [
+    "Mindfulness practice involves being present in the moment without judgment. What aspects of mindfulness are you interested in learning more about?"
+  ]
+},
+{
+  "tag": "breathing-exercises",
+  "patterns": [
+    "Give me breathing exercises",
+    "How do I practice deep breathing?",
+    "Tell me about breathing techniques for anxiety"
+  ],
+  "responses": [
+    "Deep breathing exercises can help reduce stress and promote relaxation. Would you like a guided breathing exercise?"
+  ]
+},
+{
+  "tag": "positive-affirmations",
+  "patterns": [
+    "Give me positive affirmations",
+    "How do I use positive affirmations?",
+    "Tell me about the power of positive thinking"
+  ],
+  "responses": [
+    "Positive affirmations can help challenge negative thoughts and boost self-esteem. What affirmations resonate with you?"
+  ]
+}
+
+,
+  {
+  "tag": "emotional-regulation",
+  "patterns": [
+    "How can I regulate my emotions?",
+    "I need help managing my feelings",
+    "Tell me about emotional self-regulation"
+  ],
+  "responses": [
+    "Emotional regulation techniques can help you navigate and cope with difficult feelings. What specific emotions do you find challenging to regulate?"
+  ]
+},
+{
+  "tag": "social-support",
+  "patterns": [
+    "How can I seek social support?",
+    "Tell me about building social connections",
+    "I feel isolated, what should I do?"
+  ],
+  "responses": [
+    "Social support is crucial for mental well-being. Who are some individuals or groups you could reach out to for support?"
+  ]
+},
+{
+  "tag": "progress-tracking",
+  "patterns": [
+    "How can I track my mental health progress?",
+    "I want to monitor my emotional well-being",
+    "Tell me about tracking mental health goals"
+  ],
+  "responses": [
+    "Tracking your mental health progress can help you identify patterns and measure improvements. What specific goals or indicators would you like to track?"
+  ]
+},
+{
+  "tag": "self-compassion",
+  "patterns": [
+    "How can I cultivate self-compassion?",
+    "I struggle with self-compassion",
+    "Tell me about the importance of self-compassion"
+  ],
+  "responses": [
+    "Self-compassion involves treating yourself with kindness and understanding. What self-critical thoughts or beliefs do you often struggle with?"
+  ]
+},
+{
+  "tag": "reducing-negativity",
+  "patterns": [
+    "How can I reduce negative thinking?",
+    "I want to overcome pessimism",
+    "Tell me about challenging negative thoughts"
+  ],
+  "responses": [
+    "Challenging negative thoughts can help you develop a more balanced perspective. What negative thoughts or beliefs do you frequently encounter?"
+  ]
+},
+{
+  "tag": "healthy-lifestyle",
+  "patterns": [
+    "How can I maintain a healthy lifestyle?",
+    "Tell me about the connection between lifestyle and mental health",
+    "I want to improve my overall well-being"
+  ],
+  "responses": [
+    "Adopting healthy habits can positively impact your mental health. Which areas of your lifestyle would you like to focus on improving?"
+  ]
+},
+{
+  "tag": "resilience-building",
+  "patterns": [
+    "How can I build resilience?",
+    "Tell me about resilience-building strategies",
+    "I want to bounce back from adversity"
+  ],
+  "responses": [
+    "Resilience involves adapting and bouncing back from challenges. What recent experiences have tested your resilience?"
+  ]
+},
+{
+  "tag": "finding-meaning",
+  "patterns": [
+    "How can I find meaning in life?",
+    "Tell me about the search for purpose",
+    "I feel lost and purposeless"
+  ],
+  "responses": [
+    "Finding meaning can provide a sense of fulfillment and direction. What aspects of your life or experiences bring you a sense of purpose?"
+  ]
+},
+{
+  "tag": "boundary-enforcement",
+  "patterns": [
+    "How can I enforce my boundaries effectively?",
+    "Tell me about maintaining boundaries in relationships",
+    "I struggle with boundary-setting"
+  ],
+  "responses": [
+    "Enforcing boundaries is essential for protecting your well-being. What challenges do you encounter when trying to set or maintain boundaries?"
+  ]
+},
+{
+  "tag": "trauma-recovery",
+  "patterns": [
+    "How can I recover from past trauma?",
+    "Tell me about trauma healing",
+    "I'm struggling with trauma-related symptoms"
+  ],
+  "responses": [
+    "Recovering from trauma often requires support and professional guidance. What symptoms or triggers are you experiencing as a result of past trauma?"
+  ]
+}
+  ,
+  {
+  "tag": "stress-triggers",
+  "patterns": [
+    "What are common stress triggers?",
+    "I want to identify my stressors",
+    "Tell me about recognizing stress triggers"
+  ],
+  "responses": [
+    "Recognizing stress triggers can help you manage and reduce stress. What situations or circumstances typically provoke stress for you?"
+  ]
+},
+{
+  "tag": "goals",
+  "patterns": [
+    "How can I set realistic goals for myself?",
+    "Tell me about goal-setting for mental health",
+    "I want to establish achievable objectives"
+  ],
+  "responses": [
+    "Setting  goals can provide direction and motivation for your mental health journey. What specific areas of your life would you like to set goals for?"
+  ]
+},
+{
+  "tag": "mind-body-connection",
+  "patterns": [
+    "Tell me about the mind-body connection",
+    "I want to learn how emotions affect the body",
+    "How can I improve my mind-body wellness?"
+  ],
+  "responses": [
+    "The mind-body connection refers to the relationship between mental and physical health. What physical sensations or symptoms do you notice when experiencing certain emotions?"
+  ]
+},
+{
+  "tag": "positive-social-interactions",
+  "patterns": [
+    "How can I foster positive social interactions?",
+    "Tell me about building healthy relationships",
+    "I want to improve my social skills"
+  ],
+  "responses": [
+    "Positive social interactions contribute to overall well-being and mental health. What aspects of social interaction do you find challenging or rewarding?"
+  ]
+},
+{
+  "tag": "work-life-balance",
+  "patterns": [
+    "How can I achieve a better work-life balance?",
+    "Tell me about maintaining balance in life",
+    "I feel overwhelmed with work"
+  ],
+  "responses": [
+    "Achieving a healthy work-life balance is crucial for mental wellness. What aspects of your work or personal life feel out of balance?"
+  ]
+}
+
+
 
 
     ]
